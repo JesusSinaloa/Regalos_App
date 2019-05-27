@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Envios">
+
+    <ImageView
+        android:id="@+id/logoCart"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/car_icon" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonPayFragment"
+        android:layout_width="107dp"
+        android:layout_height="98dp"
+        android:layout_alignEnd="@+id/logoCart"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="25dp"
+        android:clickable="true"
+        android:src="@drawable/paypal" />
+
+    <ListView
+        android:id="@+id/ListViewCartFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logoCart" />
+</RelativeLayout>
